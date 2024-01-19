@@ -117,6 +117,10 @@ body {
   .square li {
     margin: 5px 0; 
   }
+
+  .square abbr {
+    text-decoration: none;
+  }
   
     #contact {
       background-color: #333;
@@ -127,13 +131,6 @@ body {
       margin-bottom: 0;
       margin: 5px 0;
       text-align: center;
-  }
-  
-  
-  
-  .responsive-toggle {
-    display: none;
-    cursor: pointer;
   }
   
   
