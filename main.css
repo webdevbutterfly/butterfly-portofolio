@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 :root {
-  --body-background-color:rgb(218, 176, 121);
-  --header-background-image1:rgb(7, 5, 5);
-  --header-background-image2:rgb(218, 218, 89);
-  --header-color:aliceblue;
+  --COLOR-1:#c7ddd2;
+  --COLOR-2:#285238;
+  --COLOR-3:#138A36;
+  --COLOR-4:#04E824;
+  --COLOR-5:#313d36;
+
   --bar-background-color:white;
   --nav-li-a-color:black;
   --h2-color:#0066cc;
-  --p-color:#333;
-  --square-color:rgb(94, 100, 100);
-  --square-background-color:rgb(157, 163, 163);
-  --square-hover-background-color:rgb(113, 122, 122);
-  --abbr-color:#221f1f;
-  --square-i-hover:#2123a0;
+  --square-color:#14591D;
+  --square-background-color:#14591D;
+  --square-hover-background-color:#99AA38;
+  --square-i-hover:#ACD2ED;
   --square-a-color:#1a1313;
 }
 
@@ -186,7 +186,7 @@ transition-duration: 1s;
 
 #contact {
   background-color: transparent;
-  color: black
+  color: --p-color;
   padding: 0px;
   text-align: center;
   margin-top: 10px;
@@ -227,6 +227,8 @@ transition-duration: 1s;
     min-width: max-content;
   }
 }
+
+
 
  
   
