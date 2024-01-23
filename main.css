@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
 :root {
-  --body-background-color:#E1E289;
-  --header-background-image1:#0A210F;
-  --header-background-image2:#14591D;
-  --header-color:aliceblue;
+  --COLOR-1:#c7ddd2;
+  --COLOR-2:#285238;
+  --COLOR-3:#138A36;
+  --COLOR-4:#04E824;
+  --COLOR-5:#313d36;
+
   --bar-background-color:white;
   --nav-li-a-color:black;
-  --nav-logo-i-hover:#c41e1e;
-  --a-hover:rgb(231, 231, 231);
   --h2-color:#0066cc;
-  --p-color:#333;
   --square-color:#14591D;
   --square-background-color:#14591D;
   --square-hover-background-color:#99AA38;
-  --abbr-color:#221f1f;
   --square-i-hover:#ACD2ED;
   --square-a-color:#1a1313;
 }
@@ -21,14 +21,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color:var(--body-background-color);
-  font-family: sans-serif;
+  background-color:var(--COLOR-1);
+  font-family:'Roboto' sans-serif;
 } 
 
 header {
   color:var(--header-color);
-  background-image: linear-gradient(to right, var(--header-background-image1), var(--header-background-image2));
-  padding: 10px;
+  background-image: linear-gradient(to right, var(--COLOR-2), var(--COLOR-3));
+  padding: 1%;
   top: 0;
   width: 100%;
 }
@@ -49,7 +49,7 @@ nav {
 .bar {
   width: 50px;
   height: 5px;
-  background-color: var(--bar-background-color);
+  background-color: var(--COLOR-1);
   margin: 10px 20px;
 }
   
@@ -59,9 +59,9 @@ nav ul {
 }
   
 nav li a {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  color: var(--nav-li-a-color);
-  font-weight: 900;
+  color: var(--COLOR-1);
   padding: 10px;
   margin: 8px;
   font-size: 25px;
@@ -72,7 +72,7 @@ nav li i {
 }
 
 nav .logo i:hover {
-  color: var(--nav-logo-i-hover);
+  color: var(--COLOR-1);
   transform:scale(1.2);
   transition-timing-function:ease-in-out;
   transition-duration: 1s;
@@ -80,7 +80,7 @@ nav .logo i:hover {
 }
 
 a:hover {
-  color: var(--a-hover);
+  color: var(--COLOR-5);
 }
 
 header h1 {
@@ -95,12 +95,11 @@ h2 {
 }
 
 p {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: var(---p-color);
   line-height: 1.6;
   margin: 10px 0 10px 10px;
-  text-indent: 20px;
   padding: 1px;
   font-weight: bold;
 }
@@ -109,8 +108,9 @@ p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap:40px;
+  gap: 10px;
   padding: 10px;
+  flex-direction: row;
 }
 
 .square {
@@ -120,8 +120,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 300px;
-  border-radius: 25px;
+  max-width: auto;
+  min-width: auto;
+ 
+  border-radius: 50px;
   background-color: var(--square-background-color);
     
 }
@@ -150,12 +152,13 @@ transition-duration: 1s;
 .square h2 abbr {
   text-decoration: none;
   font-size: 50px;
-  color: var(--abbr-color);
+  color: black;
   font-weight: bold;
 }
 
 .square p {
   font-size: 30px;
+  text-align: center;
 }
 
 .square i {
@@ -174,6 +177,7 @@ transition-duration: 1s;
 }
 
 .square a {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 20px;
   color: var(--square-a-color);
@@ -182,7 +186,7 @@ transition-duration: 1s;
 
 #contact {
   background-color: transparent;
-  color: --p-color;
+  color: black
   padding: 0px;
   text-align: center;
   margin-top: 10px;
@@ -199,7 +203,7 @@ transition-duration: 1s;
   .nav-list {
     display: none;
     flex-direction: column;
-    background-color: #333;
+    background-color:var(--COLOR-5);
     position: absolute;
     top: 80px;
     left: 0;
@@ -215,9 +219,16 @@ transition-duration: 1s;
     margin:10px;
     padding: 10px;
     text-align: center;
-    color: var(--nav-logo-i-hover);
+    color: var(--COLOR-1);
+  }
+
+  .square {
+    max-width: auto;
+    min-width: max-content;
   }
 }
+
+
 
  
   
