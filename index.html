@@ -68,6 +68,12 @@
                 <div class="square square1">    <h2><abbr title="Java Script">JS</abbr></h2>
                     <p>Ongoing Learning:</p>
                     <i class="fa-brands fa-js fa-5x"></i>
+                    <h1>Guess the number</h1>
+                    <div id="joc">
+                        <p>The number it's between <span id="min"></span> and <span id="max"></span></p>
+                            <input type="number" id="txtNumber" placeholder="Enter your number:">
+                            <button id="btnGhiceste">Guess</button>
+                            <p id="mesaj"></p>
                 </div>
               </div>
               </section>
@@ -82,11 +88,8 @@
        
     </footer>
   
-    <script>
-      function toggleMenu() {
-        var navList = document.querySelector('.nav-list');
-        navList.classList.toggle('show');
-      }
+    <script src="script.js">
+     
     </script>
   </body>
 </html>
